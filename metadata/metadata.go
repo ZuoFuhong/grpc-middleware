@@ -1,4 +1,4 @@
-package tracing
+package metadata
 
 const (
 	TraceId = "trace.traceid"

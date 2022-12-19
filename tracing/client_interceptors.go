@@ -2,7 +2,9 @@ package tracing
 
 import (
 	"context"
+	"github.com/ZuoFuhong/grpc-middleware/dc"
 	"google.golang.org/grpc"
+	"google.golang.org/grpc/metadata"
 	"time"
 )
 
@@ -10,9 +12,11 @@ import (
 func UnaryClientInterceptor() grpc.UnaryClientInterceptor {
 	return func(ctx context.Context, method string, req, reply interface{}, cc *grpc.ClientConn, invoker grpc.UnaryInvoker, opts ...grpc.CallOption) error {
 		start := time.Now()
-		err := invoker(ctx, method, req, reply, cc, opts...)
+		// 通过 context 透传到下游
+		meta, _ := metadata.FromIncomingContext(ctx)
+		err := invoker(metadata.NewOutgoingContext(ctx, meta), method, req, reply, cc, opts...)
 		// Report trace log
-		go dcReport(ctx, method, req, start, err)
+		dc.Report(ctx, method, req, start, err)
 		return err
 	}
 }
