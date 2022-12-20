@@ -18,7 +18,7 @@ import (
     "github.com/ZuoFuhong/grpc-middleware/tracing"
 )
 
-s := grpc.NewServer(grpc.UnaryInterceptor(tracing.UnaryServerInterceptor()))```
+s := grpc.NewServer(grpc.UnaryInterceptor(tracing.UnaryServerInterceptor()))
 ```
 
 客户端添加拦截器，在发起服务调用时，上报服务调用链路日志.
