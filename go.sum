@@ -1,5 +1,7 @@
 github.com/ZuoFuhong/grpc-naming-monica v0.0.0-20221210125940-4824695def21 h1:XyXqu2MWTfzAyDiK/T/y/JlYN5TP/kYBXUepHmZIKZI=
 github.com/ZuoFuhong/grpc-naming-monica v0.0.0-20221210125940-4824695def21/go.mod h1:QwwnpDdqBMnuEOq1bpROscdLJ4Eq92DhLafalI6eB/E=
+github.com/ZuoFuhong/grpc-naming-monica v0.0.0-20221220071204-a4360948b7cd h1:ZRwZN9UQmfaMjQJn0XiafxwvD0FrApr2BLcOEGXoZFA=
+github.com/ZuoFuhong/grpc-naming-monica v0.0.0-20221220071204-a4360948b7cd/go.mod h1:QwwnpDdqBMnuEOq1bpROscdLJ4Eq92DhLafalI6eB/E=
 github.com/ZuoFuhong/grpc-standard-pb/go_datacollector_svr v0.0.0-20221218021427-15c88bffb756 h1:JJh/DOmcDzQ3C0Uw2B/c/D9aiXF49WkxDmTfFWwymVw=
 github.com/ZuoFuhong/grpc-standard-pb/go_datacollector_svr v0.0.0-20221218021427-15c88bffb756/go.mod h1:oLnioitGC49xJiFFN2bsbeNw+gotY2Uivu/IF31iRVA=
 github.com/golang/protobuf v1.5.0/go.mod h1:FsONVRAS9T7sI+LIUmWTfcYkHO4aIWwzhcaSAoJOfIk=

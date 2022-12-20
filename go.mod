@@ -3,7 +3,7 @@ module github.com/ZuoFuhong/grpc-middleware
 go 1.18
 
 require (
-	github.com/ZuoFuhong/grpc-naming-monica v0.0.0-20221210125940-4824695def21
+	github.com/ZuoFuhong/grpc-naming-monica v0.0.0-20221220071204-a4360948b7cd
 	github.com/ZuoFuhong/grpc-standard-pb/go_datacollector_svr v0.0.0-20221218021427-15c88bffb756
 	github.com/google/uuid v1.1.2
 	google.golang.org/grpc v1.51.0
